@@ -1,0 +1,19 @@
+{% assign categories = "Conference|Under review|Workshops" | split: "|" %}
+{% for category in categories %}
+  <h3>{{ category }}</h3>
+  <ul class="publication-list">
+    {% for publication in site.data.publications %}
+      {% if publication.category == category %}
+        <li>
+          <strong>{{ publication.title | escape }}</strong><br>
+          {{ publication.authors }}<br>
+          <em>{{ publication.venue | escape }}</em>, {{ publication.year }}{% if publication.status %} ({{ publication.status | escape }}){% endif %}
+          {% if publication.links %}
+            <br>{% for link in publication.links %}<a href="{{ link.url | escape }}">[{{ link.label | escape }}]</a> {% endfor %}
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %}
+<p class="publication-note">* indicates joint first authorship.</p>

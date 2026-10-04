@@ -41,10 +41,13 @@ When you are initially working on your website, it is very useful to be able to 
 
     On MacOS the commands are:
     ```bash
-    brew install ruby
+    brew install ruby@3.3
     brew install node
+    export PATH="$(brew --prefix ruby@3.3)/bin:$PATH"
     gem install bundler
     ```
+    Use Ruby 3.3 for this GitHub Pages dependency set; Ruby 4 is not compatible.
+    Run the `export PATH` command again in each new terminal before running Bundler.
 1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 
     If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`

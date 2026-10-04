@@ -1,0 +1,21 @@
+- category: Conference
+  title: "Mental Models for Multi-agent Agents"
+  authors: 'Hanan Gani, <strong>Lulu Shao</strong>, and Manmohan Chandraker'
+  venue: "NeurIPS"
+  year: 2026
+- category: Under review
+  title: "ϕ-Scene: Physically Grounded Image-to-3D Scene Reconstruction"
+  authors: 'Haodong Li*, <strong>Lulu Shao</strong>*, Haolin Lu*, Yu Fu, Yen-Ru Chen, Seemandhar Jain, and Manmohan Chandraker'
+  venue: "3DV"
+  year: 2027
+  status: "under review"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2606.21596"
+    - label: "Page"
+      url: "https://phi-scene.github.io/"
+- category: Workshops
+  title: "Feature Evolution in Diffusion Language Models"
+  authors: 'Meliksah Yorulmazlar, Justice Sefas, Seunghyun Yoo, and <strong>Lulu Shao</strong>'
+  venue: "NonAR-LM @ COLM"
+  year: 2026

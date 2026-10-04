@@ -9,5 +9,11 @@ group :jekyll_plugins do
   gem 'webrick', '~> 1.8'
 end
 
-gem 'github-pages'
+gem 'github-pages', '~> 232'
 gem 'connection_pool', '2.5.0'
+
+# Older Jekyll versions require these libraries explicitly on newer Ruby.
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'
